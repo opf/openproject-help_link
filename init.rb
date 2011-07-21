@@ -9,9 +9,10 @@ Redmine::Plugin.register :chiliproject_help_link do
   name 'Help Link Changer'
   author 'Jens Ulfert, Felix Schäfer @ finnlabs'
   description 'Point the help link to any URL.'
-  version '0.1.0'
-  url 'http://finn.de'
-  author_url 'http://finn.de/team'
+  version '1.0.0'
+  url 'https://github.com/finnlabs/chiliproject_help_link'
+  author_url 'http://www.finn.de/team'
   
-  settings :default => {"help_link_target" => 'http://www.redmine.org/guide'}, :partial => 'settings/chiliproject_help_link_settings.html.erb'
+  settings :default => {"help_link_target" => 'http://www.redmine.org/guide'},
+           :partial => 'settings/chiliproject_help_link_settings.html.erb'
 end

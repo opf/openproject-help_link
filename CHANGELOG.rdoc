@@ -1,0 +1,4 @@
+= 1.0.0 - 2011-07-21 - Initial release
+
+This plug-in allows you to change the target of the Help link in your
+ChiliProject.

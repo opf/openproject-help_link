@@ -1,3 +1,47 @@
-= help_link
+= ChiliProject Help Link
 
-Description goes here
+This plug-in allows you to change the target of the Help link in your
+ChiliProject.
+
+== Requirements
+
+This plug-in aims to be compatible with
+
+* ChiliProject 1.x
+
+If you are running into compatibility issues, please report a bug in the
+project's issue tracker.
+
+== Installation
+
+Please follow the default plug-in installation instructions for
+ChiliProject. This plug-in does not have any migrations.
+
+
+== Deinstallation
+
+Remove the Plug-in from vendor/plugins
+
+    rm -r vendor/plugins/chiliproject_help_link
+
+== Development
+
+To run the tests, you will need a current version of our {Redmine/ChiliProject
+Dev Tools}[https://github.com/finnlabs/redmine-dev-tools] and {Redmine/ChiliProject
+Cucumber}[https://github.com/finnlabs/redmine-cucumber]. After running
+
+    bundle install
+
+You should be able to execute the tests with
+
+    rake redmine:cucumber:chiliproject_help_link
+
+If these instructions are insufficient, please open a ticket in the GitHub issue
+tracker with information, where you are stuck.
+
+
+== License
+
+(c) 2011 - Jens Ulferts, Felix Schäfer - Finn GmbH
+
+This plug-in is licensed under the GNU GPL v2. See COPYRIGHT.txt and GPL.txt for details.
