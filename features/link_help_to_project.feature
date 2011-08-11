@@ -15,7 +15,7 @@ Feature: Link help to feature
     And there is 1 Project with the following:
       | Name | loginproject |
     And there is a role "Loginrole"
-    And the user "bob" is a "loginrole" in the project "loginproject"
+    And the user "bob" is a "Loginrole" in the project "loginproject"
     And I login as "bob"
     When I follow "Help" within "#top-menu"
     Then I should be on the page of the project "Support"
