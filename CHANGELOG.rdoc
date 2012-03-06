@@ -1,3 +1,11 @@
+= 1.0.2 - 2012-03-06
+
+Minor changes
+
+* Changing the default value to point to chiliproject.org instead of redmine.org
+* Fixing the URL of chiliproject cucumber in README
+* Adding compatibility statements for ChiliProject 2.x and 3.x
+
 = 1.0.1 - 2011-08-11
 
 Minor changes
