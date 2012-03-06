@@ -8,6 +8,8 @@ ChiliProject.
 This plug-in aims to be compatible with
 
 * ChiliProject 1.x
+* ChiliProject 2.x
+* ChiliProject 3.x
 
 If you are running into compatibility issues, please report a bug in the
 project's issue tracker.
@@ -28,7 +30,7 @@ Remove the Plug-in from vendor/plugins
 
 To run the tests, you will need a current version of our {Redmine/ChiliProject
 Dev Tools}[https://github.com/finnlabs/redmine-dev-tools] and {Redmine/ChiliProject
-Cucumber}[https://github.com/finnlabs/redmine-cucumber]. After running
+Cucumber}[https://github.com/finnlabs/chiliproject_cucumber]. After running
 
     bundle install
 
