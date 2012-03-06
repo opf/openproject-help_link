@@ -12,7 +12,7 @@ Redmine::Plugin.register :chiliproject_help_link do
   version '1.0.1'
   url 'https://github.com/finnlabs/chiliproject_help_link'
   author_url 'http://www.finn.de/team'
-  
-  settings :default => {"help_link_target" => 'http://www.redmine.org/guide'},
-           :partial => 'settings/chiliproject_help_link_settings.html.erb'
+
+  settings :default => {"help_link_target" => "https://www.chiliproject.org/help"},
+           :partial => "settings/chiliproject_help_link_settings.html.erb"
 end
