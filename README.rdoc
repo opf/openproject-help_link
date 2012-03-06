@@ -41,6 +41,13 @@ You should be able to execute the tests with
 If these instructions are insufficient, please open a ticket in the GitHub issue
 tracker with information, where you are stuck.
 
+== Credits
+
+We would like to thank
+
+* Deutsche Telekom AG (opensource@telekom.de) for project sponsorhip
+* Birthe Russmeyer and Niels Lindenthal of finnlabs for their consulting and
+  project management
 
 == License
 
