@@ -1,10 +1,9 @@
 Feature: Link help to feature
   # As a System Admin
-  # I want to relink the help button to a Project inside the system
+  # I want to relink the help button to a project inside the system
   # So that I can provide help that is customized for the system
 
-  @javascript
-  Scenario: HELP link points to public Project inside the system
+  Scenario: HELP link points to public project inside the system
     Given there is 1 user with:
       | login | bob |
     And there is 1 Project with the following:
