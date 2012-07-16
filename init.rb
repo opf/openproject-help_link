@@ -15,4 +15,11 @@ Redmine::Plugin.register :chiliproject_help_link do
 
   settings :default => {"help_link_target" => "https://www.chiliproject.org/help"},
            :partial => "settings/chiliproject_help_link_settings.html.erb"
+
+  Redmine::MenuManager.map :top_menu do |menu|
+    if Setting.table_exists?
+      menu.delete :help
+      menu.push :help, Redmine::Info.help_url, :last => true
+    end
+  end
 end
