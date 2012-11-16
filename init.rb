@@ -13,7 +13,7 @@ Redmine::Plugin.register :chiliproject_help_link do
   url 'https://github.com/finnlabs/chiliproject_help_link'
   author_url 'http://www.finn.de/team'
 
-  settings :default => {"help_link_target" => "https://www.chiliproject.org/help"},
+  settings :default => {"help_link_target" => "https://www.openproject.org/projects/support"},
            :partial => "settings/chiliproject_help_link_settings.html.erb"
 
   Redmine::MenuManager.map :top_menu do |menu|
