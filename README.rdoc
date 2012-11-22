@@ -33,7 +33,7 @@ Administration >> Plugins >> Configure (in the "Help Link Changer" row)
 
 To run the tests, you will need a current version of our Dev Tools
 [https://github.com/finnlabs/redmine-dev-tools] and
-Cucumber}[https://github.com/finnlabs/chiliproject_cucumber]. After running
+[https://github.com/finnlabs/chiliproject_cucumber]. After running
 
     bundle install
 
