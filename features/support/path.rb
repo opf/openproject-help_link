@@ -8,7 +8,7 @@ module HelpLinkNavigationHelpers
   def path_to(page_name)
     case page_name
     when /^the help_link settings page$/
-      "/settings/plugin/chiliproject_help_link"
+      "/settings/plugin/help_link"
     else
       super
     end

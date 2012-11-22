@@ -14,7 +14,7 @@ module HelpLink
 
     module ClassMethods
       def help_url_with_settings
-        Setting.plugin_chiliproject_help_link["help_link_target"]
+        Setting.plugin_help_link["help_link_target"]
       end
     end
   end
