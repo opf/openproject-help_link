@@ -1,4 +1,4 @@
-module HelpLink
+module OpenprojectHelpLink
   module InfoPatch
     def self.included(base)
       base.send(:extend, ClassMethods)
@@ -14,7 +14,7 @@ module HelpLink
 
     module ClassMethods
       def help_url_with_settings
-        Setting.plugin_help_link["help_link_target"]
+        Setting.plugin_openproject_help_link["help_link_target"]
       end
     end
   end
