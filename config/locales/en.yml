@@ -1,4 +1,4 @@
 # English strings go here for Rails i18n
 en:
-  help_link:
-    setting_help_link_target: "URL for help page (requires restart)"
+  openproject_help_link:
+    setting_help_link_target: "URL for help page"

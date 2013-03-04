@@ -1,4 +1,4 @@
 # German strings go here for Rails i18n
 de:
-  help_link:
-    setting_help_link_target: "URL für Hilfe-Seite (erfordert Neustart)"
+  openproject_help_link:
+    setting_help_link_target: "URL für Hilfe-Seite"
