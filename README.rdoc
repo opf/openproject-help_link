@@ -48,9 +48,9 @@ issue tracker with information, where you are stuck.
 
 We would like to thank
 
-* Deutsche Telekom AG (opensource@telekom.de) for project sponsorhip Birthe
-* Russmeyer and Niels Lindenthal of finnlabs for their consulting and
-  project management
+* Deutsche Telekom AG (opensource@telekom.de) for project sponsorhip
+* Birthe Russmeyer and Niels Lindenthal of finnlabs for their consulting
+  and project management
 
 == License
 
