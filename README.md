@@ -31,8 +31,10 @@ Development
 ===========
 
 To run the tests, you will need a current version of our Dev Tools
-https://github.com/finnlabs/redmine-dev-tools and
-https://github.com/finnlabs/chiliproject\_cucumber. After running
+* [Redmine Dev Tools](https://github.com/finnlabs/redmine-dev-tools and)
+* [Chiliproject Cucumber](https://github.com/finnlabs/chiliproject_cucumber).
+
+After running
 
     bundle install
 
