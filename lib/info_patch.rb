@@ -19,7 +19,3 @@ module HelpLink
     end
   end
 end
-
-unless Redmine::Info.included_modules.include?(HelpLink::InfoPatch)
-  Redmine::Info.send(:include, HelpLink::InfoPatch)
-end
