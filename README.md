@@ -1,9 +1,11 @@
-= OpenProject Help Link
+OpenProject Help Link
+=====================
 
 This plugin allows you to change the target of the help link in your
 OpenProject. Doing so allows you to e.g. have a support project within your OpenProject.
 
-== Requirements
+Requirements
+============
 
 This plugin aims to be compatible with
 
@@ -12,28 +14,25 @@ This plugin aims to be compatible with
 If you are running into compatibility issues, please report a bug in the
 project's issue tracker.
 
-== Installation
+Installation
+============
 
 Please follow the default plugin installation instructions for OpenProject.
 This plugin does not have any migrations.
 
-== Deinstallation
-
-Remove the Plug-in from vendor/plugins
-
-    rm -r vendor/plugins/help_link
-
-== Usage
+Usage
+=====
 
 The url of the help link is configurable with this plugin. You can set the url in:
 
-Administration >> Plugins >> Configure (in the "Help Link Changer" row)
+Administration > Plugins > Configure (in the "OpenProject Help Link Changer" row)
 
-== Development
+Development
+===========
 
 To run the tests, you will need a current version of our Dev Tools
-[https://github.com/finnlabs/redmine-dev-tools] and
-[https://github.com/finnlabs/chiliproject_cucumber]. After running
+https://github.com/finnlabs/redmine-dev-tools and
+https://github.com/finnlabs/chiliproject\_cucumber. After running
 
     bundle install
 
@@ -44,7 +43,8 @@ You should be able to execute the cukes with
 If these instructions are insufficient, please open a ticket in the GitHub
 issue tracker with information, where you are stuck.
 
-== Credits
+Credits
+=======
 
 We would like to thank
 
@@ -52,9 +52,10 @@ We would like to thank
 * Birthe Russmeyer and Niels Lindenthal of finnlabs for their consulting
   and project management
 
-== License
+License
+=======
 
-(c) 2011-2012 - Finn GmbH
+(c) 2011-2013 - Finn GmbH
 
-This plug-in is licensed under the GNU GPL v3. See COPYRIGHT.txt and GPL.txt
+This plug-in is licensed under the GNU GPL v3. See COPYRIGHT and GPL
 for details.
