@@ -9,7 +9,7 @@ Requirements
 
 This plugin aims to be compatible with
 
-* OpenProject 0.1
+* Rails 3.2 branch of OpenProject
 
 If you are running into compatibility issues, please report a bug in the
 project's issue tracker.
@@ -17,7 +17,9 @@ project's issue tracker.
 Installation
 ------------
 
-Please follow the default plugin installation instructions for OpenProject.
+Add ``gem 'openproject_help_link', :git => 'git@github.com:finnlabs/help_link.git'``
+to the ``Gemfile.local`` of your local OpenProject installation.
+
 This plugin does not have any migrations.
 
 Usage
@@ -29,10 +31,6 @@ Administration > Plugins > Configure (in the "OpenProject Help Link Changer" row
 
 Development
 -----------
-
-To run the tests, you will need a current version of our Dev Tools
-* [Redmine Dev Tools](https://github.com/finnlabs/redmine-dev-tools and)
-* [Chiliproject Cucumber](https://github.com/finnlabs/chiliproject_cucumber).
 
 After running
 
