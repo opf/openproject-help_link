@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
                    in your OpenProject. Doing so allows you to e.g. have a
                    support project within your OpenProject."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["GPL", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["GPL", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.12"
