@@ -19,6 +19,10 @@ require 'rails/engine'
 module OpenprojectHelpLink
   class Engine < ::Rails::Engine
 
+    initializer 'helplink.register_test_paths' do |app|
+      app.config.plugins_to_test_paths << self.root
+    end
+
     config.to_prepare do
       require 'redmine/plugin'
 
