@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Finn GmbH"]
   s.email       = ["info@openproject.org"]
   s.homepage    = "http://www.openproject.org"
-  s.summary     = "Help link targettarget  configuration"
+  s.summary     = "Help link target configuration"
   s.description = "This plugin allows you to change the target of the help link
                    in your OpenProject. Doing so allows you to e.g. have a
                    support project within your OpenProject."
