@@ -35,6 +35,8 @@ module OpenprojectHelpLink
         description spec.description
         version spec.version
 
+        requires_openproject ">= 3.0.0beta1"
+
         settings :default => {"help_link_target" => "https://www.openproject.org/projects/support"},
                  :partial => "settings/openproject_help_link_settings.html.erb"
 
