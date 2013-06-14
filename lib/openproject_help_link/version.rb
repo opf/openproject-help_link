@@ -15,5 +15,5 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 module HelpLink
-  VERSION = "3.0.1"
+  VERSION = "3.0.2"
 end
