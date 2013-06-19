@@ -1,12 +1,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "openproject_help_link/version"
+require "open_project/help_link/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "openproject_help_link"
-  s.version     = HelpLink::VERSION
+  s.name        = "openproject-help_link"
+  s.version     = OpenProject::HelpLink::VERSION
   s.authors     = ["Finn GmbH"]
   s.email       = ["info@openproject.org"]
   s.homepage    = "http://www.openproject.org"
