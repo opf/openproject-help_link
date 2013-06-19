@@ -14,8 +14,8 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-require 'openproject_help_link/engine'
-require 'info_patch'
-
-module OpenprojectHelpLink
+module OpenProject
+  module HelpLink
+    require 'open_project/help_link/engine'
+  end
 end
