@@ -16,9 +16,8 @@
 
 require 'rails/engine'
 
-module OpenprojectHelpLink
+module OpenProject::HelpLink
   class Engine < ::Rails::Engine
-
     initializer 'helplink.register_test_paths' do |app|
       app.config.plugins_to_test_paths << self.root
     end
@@ -26,7 +25,9 @@ module OpenprojectHelpLink
     config.to_prepare do
       require 'redmine/plugin'
 
-      spec = Bundler.environment.specs['openproject_help_link'][0]
+      spec = Bundler.environment.specs['openproject-help_link'][0]
+
+      require 'open_project/help_link/info_patch'
 
       Redmine::Plugin.register :openproject_help_link do
         name 'OpenProject Help Link Changer'
@@ -34,6 +35,7 @@ module OpenprojectHelpLink
         author_url spec.homepage
         description spec.description
         version spec.version
+        url "https://www.openproject.org/projects/help-link-changer"
 
         requires_openproject ">= 3.0.0beta1"
 
@@ -48,8 +50,8 @@ module OpenprojectHelpLink
         end
       end
 
-      unless Redmine::Info.included_modules.include?(OpenprojectHelpLink::InfoPatch)
-          Redmine::Info.send(:include, OpenprojectHelpLink::InfoPatch)
+      unless Redmine::Info.included_modules.include?(OpenProject::HelpLink::InfoPatch)
+          Redmine::Info.send(:include, OpenProject::HelpLink::InfoPatch)
       end
     end
   end
