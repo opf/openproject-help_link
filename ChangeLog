@@ -1,4 +1,6 @@
 
+
+* 3.0.5
 * `#2221` Renamed Redmine::Info to OpenProject::Info
 * `#2545` Migrated old plugin settings
 
