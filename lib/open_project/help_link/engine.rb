@@ -45,7 +45,7 @@ module OpenProject::HelpLink
         version spec.version
         url "https://www.openproject.org/projects/help-link-changer"
 
-        requires_openproject ">= 3.0.0beta1"
+        requires_openproject ">= 3.0.pre22"
 
         settings :default => {"help_link_target" => "https://www.openproject.org/projects/support"},
                  :partial => "settings/openproject_help_link_settings.html.erb"
