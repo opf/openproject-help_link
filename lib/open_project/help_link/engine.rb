@@ -53,13 +53,13 @@ module OpenProject::HelpLink
         Redmine::MenuManager.map :top_menu do |menu|
           if Setting.table_exists?
             menu.delete :help
-            menu.push :help, Redmine::Info.help_url, :last => true
+            menu.push :help, OpenProject::Info.help_url, :last => true
           end
         end
       end
 
-      unless Redmine::Info.included_modules.include?(OpenProject::HelpLink::InfoPatch)
-          Redmine::Info.send(:include, OpenProject::HelpLink::InfoPatch)
+      unless OpenProject::Info.included_modules.include?(OpenProject::HelpLink::InfoPatch)
+          OpenProject::Info.send(:include, OpenProject::HelpLink::InfoPatch)
       end
     end
   end

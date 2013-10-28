@@ -1,4 +1,5 @@
 
+* `#2221` Renamed Redmine::Info to OpenProject::Info
 * `#2545` Migrated old plugin settings
 
 2013-06-21  Christian Ratz <c.ratz@finn.de>
