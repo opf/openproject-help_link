@@ -18,6 +18,7 @@ require 'rails/engine'
 
 module OpenProject::HelpLink
   class Engine < ::Rails::Engine
+    engine_name :openproject_help_link
     initializer 'helplink.register_test_paths' do |app|
       app.config.plugins_to_test_paths << self.root
     end
