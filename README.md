@@ -24,6 +24,10 @@ Afterwards, run:
 
 `bundle install`
 
+This plugin contains migrations. To migrate the database, run:
+
+`rake db:migrate`
+
 Usage
 -----
 
