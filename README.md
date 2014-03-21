@@ -7,20 +7,22 @@ OpenProject. Doing so allows you to e.g. have a support project within your Open
 Requirements
 ------------
 
-This plugin aims to be compatible with
-
-* Rails 3.2 branch of OpenProject
-
-If you are running into compatibility issues, please report a bug in the
-project's issue tracker.
+The OpenProject Help Link plugin requires the [OpenProject Core](https://github.com/opf/openproject/) in version greater or equal to *3.0.0*.
 
 Installation
 ------------
 
-Add ``gem 'openproject_help_link', :git => 'git@github.com:finnlabs/help_link.git'``
-to the ``Gemfile.local`` of your local OpenProject installation.
+OpenProject Help Link depends on OpenProject Plugins. Thus, if you haven't done it already, add the following line to the `Gemfile.plugins` in your OpenProject installation:
 
-This plugin does not have any migrations.
+`gem "openproject-plugins", git: "https://github.com/opf/openproject-plugins.git", :branch => "stable"`
+
+For OpenProject Help Link itself you need to add the following line to the `Gemfile.plugins` of OpenProject:
+
+`gem "openproject-help_link", git: "https://github.com/finnlabs/openproject-help_link.git", :branch => "stable"`
+
+Afterwards, run:
+
+`bundle install`
 
 Usage
 -----
@@ -29,33 +31,41 @@ The url of the help link is configurable with this plugin. You can set the url i
 
 Administration > Plugins > Configure (in the "OpenProject Help Link Changer" row)
 
+Deinstallation
+--------------
+
+Remove the line
+
+`gem "openproject-help_link", git: "https://github.com/finnlabs/openproject-help_link.git", :branch => "stable"`
+
+from the file `Gemfile.plugins` and run:
+
+`bundle install`
+
+Bug Reporting
+-------------
+
+If you find any bugs, you can create a bug ticket at
+
+https://www.openproject.org/projects/help-link-changer
+
+
 Development
 -----------
 
-After running
-
-    bundle install
-
-You should be able to execute the cukes with
-
-    RAILS_ENV=test rake redmine:cucumber:help_link
-
-If these instructions are insufficient, please open a ticket in the GitHub
-issue tracker with information, where you are stuck.
+To contribute, you can create pull request on the official repository at
+`https://github.com/finnlabs/openproject-help_link`
 
 Credits
 -------
 
-We would like to thank
+Special thanks go to
 
-* Deutsche Telekom AG (opensource@telekom.de) for project sponsorhip
-* Birthe Russmeyer and Niels Lindenthal of finnlabs for their consulting
-  and project management
+* Deutsche Telekom AG (opensource@telekom.de) for project sponsorship
 
-License
+Licence
 -------
 
-(c) 2011-2013 - Finn GmbH
+Copyright (C) 2011 - 2014 the OpenProject Foundation (OPF)
 
-This plug-in is licensed under the GNU GPL v3. See COPYRIGHT and GPL
-for details.
+This plugin is licensed under the GNU GPL v3. See doc/COPYRIGHT.md and doc/GPL.txt for details.
