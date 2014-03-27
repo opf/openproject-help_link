@@ -17,21 +17,28 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #++
 
-module HelpLinkNavigationHelpers
-  # Maps a name to a path. Used by the
-  #
-  #   When /^I go to (.+)$/ do |page_name|
-  #
-  # step definition in web_steps.rb
-  #
-  def path_to(page_name)
-    case page_name
-    when /^the help_link settings page$/
-      "/settings/plugin/openproject_help_link"
-    else
-      super
+module OpenProject::HelpLink
+  module Patches
+    module InfoPatch
+      def self.included(base)
+        base.send(:extend, ClassMethods)
+
+        base.class_eval do
+          unloadable
+
+          class << self
+            alias_method_chain :help_url, :settings
+          end
+        end
+      end
+
+      module ClassMethods
+        def help_url_with_settings
+          Setting.plugin_openproject_help_link["help_link_target"]
+        end
+      end
     end
   end
 end
 
-World(HelpLinkNavigationHelpers)
+OpenProject::Info.send(:include, OpenProject::HelpLink::Patches::InfoPatch)

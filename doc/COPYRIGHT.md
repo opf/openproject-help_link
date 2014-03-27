@@ -1,14 +1,13 @@
-OpenProject Help Link
+OpenProject Help Link Plugin
 
-This plugin allows you to change the target of the Help link in your
+This plugin allows you to change the target of the help link in your
 OpenProject.
 
-Copyright (C) 2011 - Finn GmbH - Berlin, Germany
+Copyright (C) 2011 - 2014 the OpenProject Foundation (OPF)
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 3
-of the License, or (at your option) any later version.
+version 3.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of

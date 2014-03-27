@@ -1,4 +1,3 @@
-<%#-- copyright
 OpenProject Help Link Plugin
 
 Copyright (C) 2011 - 2014 the OpenProject Foundation (OPF)
@@ -15,9 +14,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-
-++#%>
-
-<p><label for="settings_help_link_target"><%=l('openproject_help_link.setting_help_link_target')%></label>
-<%= text_field_tag "settings[help_link_target]", help_link_setting, :size => 50 %>
-</p>
