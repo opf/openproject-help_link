@@ -12,10 +12,6 @@ The OpenProject Help Link plugin requires the [OpenProject Core](https://github.
 Installation
 ------------
 
-OpenProject Help Link depends on OpenProject Plugins. Thus, if you haven't done it already, add the following line to the `Gemfile.plugins` in your OpenProject installation:
-
-`gem "openproject-plugins", git: "https://github.com/opf/openproject-plugins.git", :branch => "stable"`
-
 For OpenProject Help Link itself you need to add the following line to the `Gemfile.plugins` of OpenProject:
 
 `gem "openproject-help_link", git: "https://github.com/finnlabs/openproject-help_link.git", :branch => "stable"`
