@@ -26,8 +26,8 @@ module OpenProject::HelpLink
     engine_name :openproject_help_link
 
     def self.settings
-      { default: {"help_link_target" => "https://www.openproject.org/projects/support"},
-        partial: "settings/openproject_help_link_settings.html.erb" }
+      { default: { 'help_link_target' => 'https://www.openproject.org/projects/support' },
+        partial: 'settings/openproject_help_link_settings.html.erb' }
     end
 
     include OpenProject::Plugins::ActsAsOpEngine
@@ -41,7 +41,7 @@ module OpenProject::HelpLink
         if Setting.table_exists?
           menu.delete :help
           menu.push :help, OpenProject::Info.help_url, last: true, caption: I18n.t('label_help'),
-          html: { accesskey: OpenProject::AccessKeys.key_for(:help), class: "icon5 icon-help"}
+                                                       html: { accesskey: OpenProject::AccessKeys.key_for(:help), class: 'icon5 icon-help' }
         end
       end
     end
