@@ -26,6 +26,6 @@ Given /^the help link setting points to the project (.+)$/ do |project_name|
 
   Redmine::MenuManager.map :top_menu do |menu|
     menu.delete :help
-    menu.push :help, OpenProject::Info.help_url, :last => true
+    menu.push :help, OpenProject::Info.help_url, last: true
   end
 end

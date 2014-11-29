@@ -26,22 +26,22 @@ module OpenProject::HelpLink
     engine_name :openproject_help_link
 
     def self.settings
-      { :default => {"help_link_target" => "https://www.openproject.org/projects/support"},
-        :partial => "settings/openproject_help_link_settings.html.erb" }
+      { default: {"help_link_target" => "https://www.openproject.org/projects/support"},
+        partial: "settings/openproject_help_link_settings.html.erb" }
     end
 
     include OpenProject::Plugins::ActsAsOpEngine
 
     register 'openproject-help_link',
-             :author_url => 'http://finn.de',
-             :requires_openproject => '>= 4.0.0',
-             :settings => settings do
+             author_url: 'http://finn.de',
+             requires_openproject: '>= 4.0.0',
+             settings: settings do
 
       Redmine::MenuManager.map :top_menu do |menu|
         if Setting.table_exists?
           menu.delete :help
-          menu.push :help, OpenProject::Info.help_url, :last => true, :caption => I18n.t('label_help'),
-          :html => { :accesskey => OpenProject::AccessKeys.key_for(:help), :class => "icon5 icon-help"}
+          menu.push :help, OpenProject::Info.help_url, last: true, caption: I18n.t('label_help'),
+          html: { accesskey: OpenProject::AccessKeys.key_for(:help), class: "icon5 icon-help"}
         end
       end
     end
