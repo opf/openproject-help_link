@@ -17,13 +17,13 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #++
 
-require Rails.root.join("db","migrate","migration_utils","setting_renamer").to_s
+require Rails.root.join('db', 'migrate', 'migration_utils', 'setting_renamer').to_s
 class RenameHelpLinkPluginSettings < ActiveRecord::Migration
   def up
-    Migration::SettingRenamer.rename("plugin_help_link","plugin_openproject_help_link")
+    Migration::SettingRenamer.rename('plugin_help_link', 'plugin_openproject_help_link')
   end
 
   def down
-    Migration::SettingRenamer.rename("plugin_openproject_help_link","plugin_help_link")
+    Migration::SettingRenamer.rename('plugin_openproject_help_link', 'plugin_help_link')
   end
 end
