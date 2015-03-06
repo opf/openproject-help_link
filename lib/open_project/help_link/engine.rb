@@ -26,7 +26,7 @@ module OpenProject::HelpLink
     engine_name :openproject_help_link
 
     def self.settings
-      { :default => {"help_link_target" => "https://www.openproject.org/projects/support"},
+      { :default => {"help_link_target" => "https://www.openproject.org/help"},
         :partial => "settings/openproject_help_link_settings.html.erb" }
     end
 
