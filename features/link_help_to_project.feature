@@ -25,4 +25,4 @@ Feature: Link help to feature
   Scenario: if help link settings not changed it will point to /help
     Given the help link setting points to help page
     When I visit the root page
-    Then I should have the help link
+    Then I should have the help link in the top menu

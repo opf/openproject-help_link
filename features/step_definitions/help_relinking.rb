@@ -32,6 +32,6 @@ When(/^I visit the root page$/) do
   visit '/'
 end
 
-Then(/^I should have the help link$/) do
+Then(/^I should have the help link in the top menu$/) do
   page.should have_link('Help', :href => OpenProject::Info.help_url)
 end
