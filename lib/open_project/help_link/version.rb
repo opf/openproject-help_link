@@ -19,6 +19,6 @@
 
 module OpenProject
   module HelpLink
-    VERSION = "4.2.2"
+    VERSION = "5.0.0-alpha"
   end
 end
