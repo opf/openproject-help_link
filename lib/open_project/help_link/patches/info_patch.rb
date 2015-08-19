@@ -24,7 +24,6 @@ module OpenProject::HelpLink
         base.send(:extend, ClassMethods)
 
         base.class_eval do
-          unloadable
 
           class << self
             alias_method_chain :help_url, :settings
