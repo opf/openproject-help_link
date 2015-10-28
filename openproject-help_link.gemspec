@@ -7,8 +7,8 @@ require 'open_project/help_link/version'
 Gem::Specification.new do |s|
   s.name        = 'openproject-help_link'
   s.version     = OpenProject::HelpLink::VERSION
-  s.authors     = 'Finn GmbH'
-  s.email       = 'info@finn.de'
+  s.authors     = 'OpenProject GmbH'
+  s.email       = 'info@openproject.com'
   s.homepage    = 'https://www.openproject.org/projects/help-link-changer'
   s.summary     = 'OpenProject Help Link'
   s.description = "This plugin allows you to change the target of the help link
