@@ -1,12 +1,8 @@
 $:.push File.expand_path('../lib', __FILE__)
 
-# Maintain your gem's version:
-require 'open_project/help_link/version'
-
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = 'openproject-help_link'
-  s.version     = OpenProject::HelpLink::VERSION
+  s.version     = '5.1.0'
   s.authors     = 'OpenProject GmbH'
   s.email       = 'info@openproject.com'
   s.homepage    = 'https://community.openproject.org/projects/help-link-changer'
@@ -15,8 +11,9 @@ Gem::Specification.new do |s|
                    in your OpenProject. Doing so allows you to e.g. have a
                    support project within your OpenProject."
 
-  s.files = Dir['{app,config,db,lib, doc}/**/*'] + ['README.md']
-  s.test_files = Dir['test/**/*']
-
-  s.add_dependency 'rails', '~> 4.2.4'
+  s.files = Dir['lib/**/*'] + ['README.md']
+  s.post_install_message = <<-MESSAGE
+    OpenProject-announcements has been fully integrated into OpenProject 5.1.
+    Please remove this plugin from your Gemfile.plugin entries.
+  MESSAGE
 end
