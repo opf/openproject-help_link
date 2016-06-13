@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir['lib/**/*'] + ['README.md']
   s.post_install_message = <<-MESSAGE
-    OpenProject-announcements has been fully integrated into OpenProject 5.1.
+    openproject-help_link has been fully integrated into OpenProject 5.1.
     Please remove this plugin from your Gemfile.plugin entries.
   MESSAGE
 end
